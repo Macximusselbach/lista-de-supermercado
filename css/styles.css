@@ -18,9 +18,7 @@ body {
   font-size: var(--font-size-base);
 }
 
-body,
-h1,
-ul {
+body, h1, ul {
   margin: 0;
 }
 
@@ -28,12 +26,39 @@ ul {
   padding: 0;
 }
 
-input,
-button {
+input, button {
   font-family: inherit;
   font-size: inherit;
 }
 
 h1 {
   font-size: var(--font-size-lg);
+}
+
+.input-group {
+  display: flex;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--color-gray-light);
+  border-radius: var(--border-radius-base);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 16px;
+  color: var(--color-dark);
+  border: none;
+  border-radius: var(--border-radius-base);
+}
+
+.input-group button {
+  min-width: 120px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 16px 20px;
+  border-color: var(--color-primary);
+  border: none;
+  border-top-right-radius: var(--border-radius-base);
+  border-bottom-right-radius: var(--border-radius-base);
 }
