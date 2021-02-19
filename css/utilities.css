@@ -1,0 +1,55 @@
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.mb-5 {
+  margin-bottom: 48px;
+}
+
+.mt-3 {
+  margin-top: 16px;
+}
+
+.mt-5 {
+  margin-top: 48px;
+}
+
+.mr-3 {
+  margin-right: 16px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.text-decoration-line-through {
+  text-decoration: line-through;
+}
+
+.bg-warning {
+  background-color: var(--color-warning) !important;
+}
+
+.text-dark {
+  color: var(--color-dark) !important;
+}

@@ -1,0 +1,39 @@
+:root {
+  --color-dark: #212529;
+  --color-gray-light: #ced4da;
+  --color-gray-lighter: #f4f0f0;
+  --color-primary: #0d6efd;
+  --color-white: #ffffff;
+  --color-warning: #ffe897;
+  --color-dander: #cc0000;
+  --font-size-base: 16px;
+  --font-size-lg: 48px;
+  --font-family-base: Arial, sans-serif;
+  --border-radius-base: 50px;
+}
+
+body {
+  height: 100vh;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+}
+
+body,
+h1,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+h1 {
+  font-size: var(--font-size-lg);
+}
