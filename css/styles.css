@@ -66,3 +66,20 @@ h1 {
 .container {
   max-width: 960px;
 }
+
+.btn-icon {
+  padding: 8px;
+  background: transparent;
+  line-height: 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 50%;
+}
+
+.btn-icon:hover,
+.btn-icon:focus {
+  border-color: var(--color-gray-lighter);
+  background-color: var(--color-gray-lighter);
+  transition: 0.3s ease-out background-color;
+}
