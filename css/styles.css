@@ -62,3 +62,7 @@ h1 {
   border-top-right-radius: var(--border-radius-base);
   border-bottom-right-radius: var(--border-radius-base);
 }
+
+.container {
+  max-width: 960px;
+}
