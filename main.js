@@ -15,10 +15,16 @@ function DeleteIcon() {
   </svg>`
 }
 
-document.querySelector('#add-item-form').addEventListener('submit', (e) => {
+function deleteItem(itemId) {
+  document.getElementById(itemId).remove();
+}
+
+function addItem(e) {
   e.preventDefault();
   
   const item = e.target.item.value;
+  const itemId = `item-${Date.now()}`;
+  const deleteButtonId = `delete-${Date.now()}`;
   
   // checkbox
   const checkboxId = `checkbox-${Date.now()}`;
@@ -48,7 +54,7 @@ document.querySelector('#add-item-form').addEventListener('submit', (e) => {
   const deleteButton = document.createElement('button');
   deleteButton.type = 'button';
   deleteButton.className = 'btn-icon';
-  deleteButton.id = 'delete-button';
+  deleteButton.id = deleteButtonId;
   deleteButton.innerHTML = DeleteIcon();
 
   const buttonsSection = document.createElement('div');
@@ -57,12 +63,16 @@ document.querySelector('#add-item-form').addEventListener('submit', (e) => {
 
   // li
   const li = document.createElement('li');
+  li.id = itemId;
   li.className = 'd-flex align-items-center justify-content-between';
   li.appendChild(checkboxSection);
   li.appendChild(buttonsSection);
 
   document.querySelector('#items-list').appendChild(li);
+  document.getElementById(deleteButtonId).addEventListener('click', () => deleteItem(itemId));
   
   e.target.reset();
-});
+}
+
+document.querySelector('#add-item-form').addEventListener('submit', addItem);
 
